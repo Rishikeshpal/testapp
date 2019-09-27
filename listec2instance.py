@@ -16,3 +16,13 @@ for region in ec2_regions:
     for instance in instances:
         if instance.state["Name"] == "running":
             print (instance.id, instance.instance_type, region)
+
+             
+#list all instances irrespective of their state
+
+#!/usr/bin/env python
+
+import boto3
+ec2 = boto3.resource('ec2')
+for instance in ec2.instances.all():
+ print instance.id, instance.state
