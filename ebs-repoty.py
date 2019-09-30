@@ -1,14 +1,8 @@
 #! /usr/bin/python
-################################################################################
-## ebs-report - Creates a CSV report for EBS volumes, including some snapshot information
-## Written by N2W Software
-## Date: July 2014
-## License: You can use/modify/circulate or do whatever you want.
-##          Just note that this script is given "As Is" without any warranty
-##
-## Usage: see README file
-##
-################################################################################
+
+# python ebs-report.py --regions us-east-1 --access_key ### --secret_key ### --file d:\my-ebs-report.csv
+            
+            
 import csv
 import os, sys
 import datetime
