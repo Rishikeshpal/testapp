@@ -16,4 +16,4 @@ for ami in amilist:
     if delete_time > start_time:
         print('fmt_start_time = {}' And delete_time= {} '.format(start_time,delete_time))
         image.deregister()
-        print('AMI: = {} is deregistered'.format(ami.image-id ))
+        print('AMI: = {} is deregistered'.format(ami.image_id ))
